@@ -1,0 +1,25 @@
+.menu{
+    background-color: black;
+    color: aliceblue;
+}
+.menu:hover{
+    color:red
+}
+
+
+.blue   {color: blue}
+.red    {color:red}
+.orange {color:orange}
+.green  {color: greenyellow}
+.purple {color:purple}
+
+.tam16 {font-size: 16pt;}
+.tam26 {font-size: 18pt;}
+.tam36 {font-size: 20pt;}
+.tam46 {font-size: 22pt;}
+.tam56 {font-size :24pt;}
+
+#p_orange{background-color: black;}
+
+a {text-decoration: none;}
+div a :visited{color: rgb(165, 42, 42);}
