@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adivinhação</title>
+  <link rel="stylesheet" href=".css">
+</head>
+<body class="pagina-guess">
+  <main>
+    <h1>Jogo de Adivinhação</h1>
+    <p class="texto">Adivinhe o número entre 0 e 99.</p>
+
+    <div class="cartao">
+      <input type="number" id="palpite" min="0" max="99" placeholder="0-99">
+      <div>
+        <button onclick="verificar()">Adivinhar</button>
+        <button onclick="novoJogo()">Novo jogo</button>
+      </div>
+      <div id="resultado">Digite um número.</div>
+    </div>
+  </main>
+
+  <script>
+    var sorteado = Math.floor(Math.random() * 100);
+
+    function verificar() {
+      var palpite = Number(document.getElementById("palpite").value);
+      var resultado = document.getElementById("resultado");
+
+      if (palpite == sorteado) {
+        resultado.textContent = "Acertou! O número era " + sorteado + ".";
+        document.getElementById("resultado").style.setProperty("background-color", "green");
+        resultado.style.setProperty("color", "white");
+      } else if (palpite > sorteado) {
+        resultado.textContent = "Errou! Tente um número menor.";
+        document.getElementById("resultado").style.setProperty("background-color", "red");
+        resultado.style.setProperty("color", "white");
+      } else {
+        resultado.textContent = "Errou! Tente um número maior.";
+        document.getElementById("resultado").style.setProperty("background-color", "red");
+        resultado.style.setProperty("color", "white");
+      }
+    }
+    function novoJogo() {
+      sorteado = Math.floor(Math.random() * 100);
+      document.getElementById("palpite").value = "";
+      document.getElementById("resultado").textContent = "Digite um número.";
+      document.getElementById("resultado").style.setProperty("background-color", "#f4f6fb");
+      document.getElementById("resultado").style.setProperty("color", "#1f2a6b");
+    }
+    document.getElementById("palpite").addEventListener("keydown", function (e) {
+      if (e.key == "Enter") {
+        verificar();
+      }
+    });
+  </script>
+</body>
+</html>
