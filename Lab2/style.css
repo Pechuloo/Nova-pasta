@@ -78,7 +78,9 @@ td {
   text-align: center;
 }
 .botao {
-  display: inline-block;
+  display:flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   padding: 12px 28px;
   background-color: #ffd166;
