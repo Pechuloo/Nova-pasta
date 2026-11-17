@@ -1,0 +1,98 @@
+
+body {
+    background-color: lightgray;
+}
+ 
+.pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+    padding: 0 20px;
+    border: 4px solid navy;
+    background-color: bisque;
+    color: darkgreen;
+    font-size: 50px;
+    font-weight: bold;
+}
+ 
+.parte_azul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+    height: 55px;
+    background-color: lightskyblue;
+    color: darkred;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+ 
+.class {
+    text-align: center;
+    color: purple;
+    font-family: SansSerif;
+    font-size: 20pt;
+}
+ 
+h2 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+ 
+.img, .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 40px 0 20px;
+}
+ 
+.consulta {
+    width: 520px;
+    height: 100px;
+    margin: 0 auto 20px;
+    background-color: yellow;
+    color: black;
+    font-size: 16px;
+}
+ 
+table {
+    margin: 20px auto 0;
+    border: 3px dashed red;
+}
+ 
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+ 
+th {
+    color: red;
+}
+ 
+table a {
+    color: black;
+    text-decoration: none;
+}
+ 
+ 
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 0 20px;
+    background-color: bisque;
+    color: black;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 15pt;
+    text-align: center;
+}
+ 
+.rodape img {
+    height: 140px;
+    width: auto;
+}
